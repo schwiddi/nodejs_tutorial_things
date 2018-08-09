@@ -20,3 +20,9 @@ const BauplanMensch = require('human');
 
 und dann machst du eine Objekt von der klasse
 const dominik = new BauplanMensch();
+
+
+
+# function vs method
+a function is a function
+a function inside a class is a method.
