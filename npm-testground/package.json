@@ -1,0 +1,11 @@
+{
+  "name": "npm-testground",
+  "version": "1.0.0",
+  "description": "some description text should go here :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "schwiddi",
+  "license": "ISC"
+}
