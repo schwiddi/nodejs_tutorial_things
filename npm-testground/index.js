@@ -13,3 +13,8 @@ console.log(result);
 // and here the other way around
 var result = _.contains([1, 2, 3], 9);
 console.log(result);
+
+//you can get it to run but it does nothing to nowhere
+_.contains([1, 2, 3, 4, 5], 10);
+// but you can use it inside a function but leave the ; inside the function
+console.log(_.contains([1, 2, 3, 4, 5], 2));
