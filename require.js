@@ -10,6 +10,6 @@ const bla2 = require('./app') // das .js mach node selbst hinzu du kannst es abe
 
 // dritte variante
 // node sucht in node_modules / natürlich nur wenn vorhanden
-const bla3 = require('underscore') // da es hier in diesem folder keinen subfolder
-// modules gibt von npm wir das nicht klappen aber trozdem ist es hier beschrieben
-
+ // da es hier in diesem folder keinen subfolder
+ // modules gibt von npm wir das nicht klappen aber trozdem ist es hier beschrieben
+const bla3 = require('underscore')
