@@ -1,0 +1,19 @@
+{
+  "name": "nodejs_tutorial_things",
+  "version": "1.0.0",
+  "description": "here i'll store some code samples and things",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schwiddi/nodejs_tutorial_things.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schwiddi/nodejs_tutorial_things/issues"
+  },
+  "homepage": "https://github.com/schwiddi/nodejs_tutorial_things#readme"
+}
