@@ -9,7 +9,7 @@
   "author": "schwiddi",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.2.7",
-    "underscore": "^1.9.1"
-  }
+    "mongoose": "^5.2.7",       // the Caret ^ tells that the major version should stay 16.X.X here
+    "underscore": "^1.9.1"      // if there is Tilde ~ then in thos case it should stay 1.1.X
+  }                             // and all this is called semantic versioning
 }
