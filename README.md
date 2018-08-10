@@ -8,7 +8,8 @@ https://nodejs.org/dist/latest-v8.x/docs/api/
 
 # Personal Notes
 # Naming Convention
-Klassen werden immer gross geschrieben bzw. CamelCase
+Klassen werden immer gross geschrieben bzw. PascalCase or DromedaryCase !!
+Achtung nicht camelCase :)
 
 z.B.: const EventEmitter = require('events');
 
