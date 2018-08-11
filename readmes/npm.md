@@ -22,3 +22,8 @@ npm init --yes
 // use this to get the depencys
 npm install
 npm i
+
+// uninstall package
+npm uninstall packagename
+npm un packagename
+
