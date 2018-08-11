@@ -27,9 +27,3 @@ const dominik = new BauplanMensch();
 # function vs method
 a function is a function
 a function inside a class is a method.
-
-
-# package json versioning things
-the Caret ^ tells that the major version should stay 16.X.X here
-if there is Tilde ~ then it should stay 1.1.X
-and all this is called semantic versioning

@@ -1,6 +1,8 @@
 # SemVer referse to Semantic Versioning
 4.6.1
 
+Major.Minor.Patch :) simple as that
+
 # 4.6.X -> X gets counted when there is a bug and a patch :)
 
 # 4.X   -> X gets counted when there is an update but no api's wont brake
