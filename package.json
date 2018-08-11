@@ -16,5 +16,9 @@
     "url": "https://github.com/schwiddi/nodejs_tutorial_things/issues"
   },
   "homepage": "https://github.com/schwiddi/nodejs_tutorial_things#readme",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7",
+    "underscore": "^1.9.1"
+  }
 }
