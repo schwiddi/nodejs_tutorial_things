@@ -65,3 +65,46 @@ npm update
 # and then run update
 # and funaly outdated again
 # then you se the changes in the versions obviosly
+
+
+
+# now installing a new tool globaly
+npm i -g npm-check-updates
+
+# then you can run
+npm-check-updates
+# or simply
+ncu
+
+#now update all packages and update package.json by ncu -u
+ncu -u
+
+
+# adding dependencys that are only used for dev
+npm i jshint --save-dev
+
+# show globaly installed outdated
+npm -g outdated
+
+# uninstall global of course :)
+npm un -g ...
+
+# list all globaly installed packages
+npm -g list --depth=0
+
+
+
+# making your own npm package
+# create a folder
+# run init
+npm init --yes
+
+#create a index.js as an entry point of the package
+# but you need to have an account on npm
+# then login
+npm login
+
+npm publish
+
+# Update a version of your own package
+npm minor version
