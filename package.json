@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/schwiddi/nodejs_tutorial_things/issues"
   },
-  "homepage": "https://github.com/schwiddi/nodejs_tutorial_things#readme"
+  "homepage": "https://github.com/schwiddi/nodejs_tutorial_things#readme",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
 }
