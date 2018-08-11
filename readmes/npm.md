@@ -1,3 +1,5 @@
+# Doku --> https://www.npmjs.com/
+
 # Version
 npm -v
 
@@ -32,3 +34,10 @@ npm un packagename
 # package json versioning things
 the Caret ^ tells that the major version should stay 16.X.X here
 if there is Tilde ~ then it should stay 1.1.X
+
+
+
+# get list off all modules and dependencys used
+npm list
+
+npm list --depth=0
