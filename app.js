@@ -7,7 +7,7 @@ console.log(a);
 // now cause you exported it in mylogmodulejs
 // you can use it here
 
-console.log(a.myurl1);
+console.log(a.myurlglobal);
 
 // here i'm using the function defined in mylogbla
-a.myLogModule('my own log messages');
+a.myLogModuleGlobal('my own log messages');
