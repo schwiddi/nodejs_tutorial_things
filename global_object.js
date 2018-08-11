@@ -1,13 +1,14 @@
+/*jshint esversion: 6 */
 // these are global objects in js
 console.log('foo');
 
 setTimeout(() => {
-    console.log('baaar')
+    console.log('baaar');
 }, 1000);
 clearTimeout();
 
 setInterval(() => {
-    console.log('shdhsidishidh')
+    console.log('shdhsidishidh');
 }, 10000);
 clearInterval();
 
@@ -32,5 +33,5 @@ console.log(a);
 // dafür gibt es das global object
 global.console.log('baaar');
 global.setTimeout(() => {
-    console.log('kasodokooo')
+    console.log('kasodokooo');
 }, 5000);

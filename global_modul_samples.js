@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // https://nodejs.org/dist/latest-v8.x/docs/api/os.html
 const os = require('os');
 const freemem = os.freemem();
@@ -28,5 +29,5 @@ console.log(files);
 
 fs.readdir('./',function(err, otherfiles) {
     if (err) console.log('Error', err);
-    else console.log('Files', otherfiles)
-})
+    else console.log('Files', otherfiles);
+});

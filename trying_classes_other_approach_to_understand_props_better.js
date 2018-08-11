@@ -15,7 +15,7 @@ class User {  // you build a class
     }
 
     ownHelloText() {
-        console.log(`${this.welcomertext} ${this.name}`)
+        console.log(`${this.welcomertext} ${this.name}`);
     }
 }
 

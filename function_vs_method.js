@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // this is a simple log function
 // when this function is called
 //it simply console log the content of logmessage that was given to to function
@@ -17,7 +18,7 @@ class Logger {
 }
 
 // mach ne instanz von der Klasse logger
-const tmplogger = new Logger
+const tmplogger = new Logger();
 
 // nun nutze die instanz bzw. die methode logger in der instanz oder im object um etwas zu loggen
-tmplogger.logger('using object method to log something')
+tmplogger.logger('using object method to log something');
