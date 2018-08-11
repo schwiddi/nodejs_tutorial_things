@@ -1,6 +1,8 @@
 /*jshint esversion: 6 */
 const myurl = 'http://schwiddi.internet-box.ch';
-
+console.log(module);
+console.log(__filename);
+console.log(__dirname);
 
 function myLogModule(logstring) {
     console.log(logstring);
