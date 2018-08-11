@@ -61,7 +61,7 @@ npm update
 
 # to easy simulate this run npm i packagename@someoldversion
 # then run npm outdated
-# write the newest version in the depencys
+# write the newest version in packahe.json
 # and then run update
 # and funaly outdated again
 # then you se the changes in the versions obviosly
