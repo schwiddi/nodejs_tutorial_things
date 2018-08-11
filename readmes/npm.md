@@ -41,3 +41,27 @@ if there is Tilde ~ then it should stay 1.1.X
 npm list
 
 npm list --depth=0
+
+# view a packages information
+npm view express
+
+
+# install a package at a specific version
+npm i express@1.0.0
+
+
+# dealing with different versions
+
+# with this you see what you got compared to what your package.json say is max or exact (remember ^ and thes Tile things)
+# it also shows the newest version availeble
+npm outdated
+
+# when you have different version you can run the follow / it will update to max version passible according to your json package file settings
+npm update
+
+# to easy simulate this run npm i packagename@someoldversion
+# then run npm outdated
+# write the newest version in the depencys
+# and then run update
+# and funaly outdated again
+# then you se the changes in the versions obviosly
