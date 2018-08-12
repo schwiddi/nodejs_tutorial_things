@@ -7,8 +7,8 @@ const games = [
 ];
 
 
-// here is the same code as in index-3 bur made better with
-// Named functions umbau
+// here is the same code as in index-4 but made better with
+// Umbau auf Promises
 
 console.log('Echo: Before DB Querry in Code..');
 
@@ -22,7 +22,6 @@ function getAllGamesFromUserCount(user, callback) {
 
 function getAllWonGamesFromUserCount(user, givenwongames, callback) {
     const overgivenwongames = givenwongames;
-    console.log(overgivenwongames)
     setTimeout(() => {
         let count = 51;
         console.log(`Got Result for getAllWonGamesFromUserCount from User: ${user} WonGames: ${count}`);
@@ -31,7 +30,6 @@ function getAllWonGamesFromUserCount(user, givenwongames, callback) {
 };
 
 function calculatePercentageWonGames(all, won, callback) {
-    console.log(all, won);
     setTimeout(() => {
         const ratio = ( won / all ) * 100;
         console.log(`Got Result for calculatePercentageWonGames from User: Schwiddi Ratio is: ${ratio}`);
@@ -42,7 +40,7 @@ function calculatePercentageWonGames(all, won, callback) {
 
 
 getAllGamesFromUserCount('schwiddi', getAllPlayedGamesOfUser);
-// raplacing this anonymous callback functions with named function
+// 
 
 function displayRatioOfUser(ratio) {
     console.log(`callback from function calculatePercentageWonGames..`);
@@ -52,18 +50,13 @@ function displayRatioOfUser(ratio) {
 function getOutWonGamesOfUser(allgames, countallwongamesfromuser) {
         console.log(`callback from function getAllWonGamesFromUserCount.. the count is ${countallwongamesfromuser}`);
         const allwongames = countallwongamesfromuser;
-        console.log(allwongames);
         calculatePercentageWonGames(allgames, allwongames, displayRatioOfUser);
 }
 
 function getAllPlayedGamesOfUser(countallgamesfromuser) {
     console.log(`callback from function getAllGamesFromUserCount.. the count is ${countallgamesfromuser}`);
-    const allgames = countallgamesfromuser;
-    console.log(`allgames is: ${allgames}`);
-    
+    const allgames = countallgamesfromuser;    
     getAllWonGamesFromUserCount('schwiddi', allgames, getOutWonGamesOfUser);
 }
-
-// see index-5 for promises
 
 console.log('Echo: After DB Querry in Code..');
