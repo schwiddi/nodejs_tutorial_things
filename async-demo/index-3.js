@@ -67,12 +67,13 @@ getAllGamesFromUserCount('schwiddi', (countallgamesfromuser) => { // here is the
             console.log(`the percentage of won games for user Schwiddi is: ${ratio}`);
         });
     });
-
-
-
-
 });
 
+
+// this above is called CALLBACK HELL
+// or Cristmastree Problem
+
+// how to do it better with promises see index-4.js
 
 
 
