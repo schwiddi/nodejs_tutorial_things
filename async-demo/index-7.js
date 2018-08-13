@@ -77,7 +77,7 @@ async function displayPercentage() {
     }    
 }
 // and execute this function
-displayPercentage()
+displayPercentage();
 
 
 
