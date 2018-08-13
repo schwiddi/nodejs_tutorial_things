@@ -73,7 +73,7 @@ async function displayPercentage() {
         return(calcdone)
     }
     catch(err) {
-        console.log('arrived in the catch', err)
+        console.log('arrived in the catch', err.message)
     }    
 }
 // and execute this function
