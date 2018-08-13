@@ -8,7 +8,7 @@ setTimeout(() => {
 console.log('After...')
 
 // this is actualy a callback funktion in js
-// setTimeout takes a callback function as the 1 arg
+// setTimeout takes a callback function as the 1. arg
 // oldschool written like that
 setTimeout(function() {
     console.log('Waited 5 Seconds');
