@@ -37,14 +37,48 @@ function calculatePercentageWonGames(all, won) {
     });
 }
 
-const allgamespromise = getAllGamesFromUserCount('schwiddi');
-const wongamespromise = getAllWonGamesFromUserCount('schwiddi');
+// after switch to promises
+// getAllGamesFromUserCount('schwiddi')
+//     .then(count => getAllWonGamesFromUserCount('schwiddi'))
+//     .then(countwon => calculatePercentageWonGames(72,countwon)) // setting 1. arg manualy / my example is not the best to display this
+//     .then(ratio => console.log('end of then chain'))
+//     .catch(err => console.log('Arrived in .catch', err));
+
+// this above was before switching to async await
+// const allusergames = await getAllGamesFromUserCount('schwiddi');
+// const allwonusergames = await getAllWonGamesFromUserCount('schwiddi');
+// const calcdone = await calculatePercentageWonGames(allusergames, allwonusergames);
+// console.log(calcdone);
+
+// so after written it in await we need to wrap it in a async function
+// async function displayPercentage() {
+//     const allusergames = await getAllGamesFromUserCount('schwiddi');
+//     const allwonusergames = await getAllWonGamesFromUserCount('schwiddi');
+//     const calcdone = await calculatePercentageWonGames(allusergames, allwonusergames);
+//     console.log(calcdone);    
+// }
+// and execute this function
+// displayPercentage();
 
 
-// get promise from both async readings
-// and then give the returns to the calculate function
-Promise.all([allgamespromise, wongamespromise])
-    .then(resultfrompromisearraycauseofallmethod => calculatePercentageWonGames(resultfrompromisearraycauseofallmethod[0], resultfrompromisearraycauseofallmethod[1]))
-    .catch(err => console.log('something went wrong here', err));
+// PS jshint seems not to like async functions :)
+
+// when you are using async functions you do not have a .catch..
+// so instead u use this here
+async function displayPercentage() {
+    try {
+        const allusergames = await getAllGamesFromUserCount('schwiddi');
+        const allwonusergames = await getAllWonGamesFromUserCount('schwiddi');
+        const calcdone = await calculatePercentageWonGames(allusergames, allwonusergames);
+        return(calcdone)
+    }
+    catch(err) {
+        console.log('arrived in the catch', err)
+    }    
+}
+// and execute this function
+displayPercentage()
+
+
 
 console.log('Echo: After DB Querry in Code..');
