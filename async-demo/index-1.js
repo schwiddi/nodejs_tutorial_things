@@ -1,11 +1,13 @@
+/*jshint esversion: 6 */
+
 // Simple demo of the asyncronus behavior of js
-console.log('Before...')
+console.log('Before...');
 
 setTimeout(() => {
     console.log('Waited 5 Seconds');
   }, 5000);
 
-console.log('After...')
+console.log('After...');
 
 // this is actualy a callback funktion in js
 // setTimeout takes a callback function as the 1. arg

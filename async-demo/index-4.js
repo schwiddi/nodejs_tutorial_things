@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const games = [
     { id: 1, playerA: 'Schwiddi', playerB: 'Basil', scorePlayerA: 1, scorePlayerB: 0 },
     { id: 2, playerA: 'Schwiddi', playerB: 'Basil', scorePlayerA: 0, scorePlayerB: 1 },
@@ -18,17 +20,17 @@ function getAllGamesFromUserCount(user, callback) {
         console.log(`Got Result for getCountAllGamesFromUser from User: ${user} Games: ${count}`);
         callback(count);
     }, 3000);
-};
+}
 
 function getAllWonGamesFromUserCount(user, givenwongames, callback) {
     const overgivenwongames = givenwongames;
-    console.log(overgivenwongames)
+    console.log(overgivenwongames);
     setTimeout(() => {
         let count = 51;
         console.log(`Got Result for getAllWonGamesFromUserCount from User: ${user} WonGames: ${count}`);
         callback(overgivenwongames, count);
     }, 2000);
-};
+}
 
 function calculatePercentageWonGames(all, won, callback) {
     console.log(all, won);
@@ -37,7 +39,7 @@ function calculatePercentageWonGames(all, won, callback) {
         console.log(`Got Result for calculatePercentageWonGames from User: Schwiddi Ratio is: ${ratio}`);
         callback(ratio);
     }, 2000);
-};
+}
 
 
 

@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const games = [
     { id: 1, playerA: 'Schwiddi', playerB: 'Basil', scorePlayerA: 1, scorePlayerB: 0 },
     { id: 2, playerA: 'Schwiddi', playerB: 'Basil', scorePlayerA: 0, scorePlayerB: 1 },
@@ -32,7 +34,7 @@ function getAllGamesFromUserCount(user, callback) { // here is a 2 arg a callbac
         console.log(`Got Result for getCountAllGamesFromUser from User: ${user} Games: ${count}`);
         callback(count); // here you call the callback
     }, 3000);
-};
+}
 // 2. to get all won games from a user
 function getAllWonGamesFromUserCount(user, callback) {
     setTimeout(() => {
@@ -40,7 +42,7 @@ function getAllWonGamesFromUserCount(user, callback) {
         console.log(`Got Result for getAllWonGamesFromUserCount from User: ${user} WonGames: ${count}`);
         callback(count);
     }, 5000);
-};
+}
 
 // 3. to get the won in %
 function calculatePercentageWonGames(all, won, callback) {
@@ -49,7 +51,7 @@ function calculatePercentageWonGames(all, won, callback) {
         console.log(`Got Result for calculatePercentageWonGames from User: Schwiddi Ratio is: ${ratio}`);
         callback(ratio);
     }, 10000);
-};
+}
 
 
 // nun um die asynchronität noch besser darzustellen mache ich den funktionsaufruf

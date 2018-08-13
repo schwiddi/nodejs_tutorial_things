@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // temporar Database :)
 const games = [
     { id: 1, playerA: 'Schwiddi', playerB: 'Basil', scorePlayerA: 1, scorePlayerB: 0 },
@@ -20,7 +22,7 @@ function getAllGamesFromUserCount(user) {
         console.log(`Got Result for getCountAllGamesFromUser from User: ${user} Games: ${count}`);
         return(count);
     }, 3000);
-};
+}
 
 const countall = getAllGamesFromUserCount('schwiddi');
 console.log(`count is: ${countall}`);
