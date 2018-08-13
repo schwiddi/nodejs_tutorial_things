@@ -22,8 +22,8 @@ const p2 = new Promise((resolve, reject) => {
     
     // use settimeout to demo some async operation
     setTimeout(() => {
-        //resolve(result);
-        reject(new Error('Message'));
+        resolve(result);
+        //reject(new Error('Message'));
     }, 3000);
 });
 
@@ -49,3 +49,19 @@ p2.catch(err => console.log('Error: ', err.message));
 
 /// IMPORTANT:
 // überall wo du async operationen machst solltest du das mit promises lösen
+
+
+
+// create for testing an already resolved Promise
+const bla = Promise.resolve('bla');
+bla.then(resultfrompromise => console.log(resultfrompromise));
+
+
+// this ofcourse can aslo be rejected
+
+const bla2 = Promise.reject(new Error('bla2'));
+bla2.catch(someerror => console.log(someerror));
+
+// keep in mind with errors it is common practice to create e new Error
+// object as a return / this will inlcude a callstack
+// and this is better to analyse
