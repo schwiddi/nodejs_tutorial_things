@@ -1,4 +1,3 @@
-
 // importing underscore
 // as it was instelled with npm i underscore (--save is no longer needed / it does it automaticly)
 var _ = require('underscore');

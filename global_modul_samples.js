@@ -7,9 +7,8 @@ const totalmem = os.totalmem();
 console.log(`Fremem is ${freemem}`);
 console.log(`Totalmem is ${totalmem}`);
 
-const usedmem = totalmem-freemem;
+const usedmem = totalmem - freemem;
 console.log(`Used is ${usedmem}`);
-
 
 // https://nodejs.org/dist/latest-v8.x/docs/api/fs.html
 const fs = require('fs');
@@ -27,7 +26,7 @@ console.log(files);
 // and in this callback only one will be filled..
 // so you can check if err is null then there is a result in in this case 'otherfiles'
 
-fs.readdir('./',function(err, otherfiles) {
-    if (err) console.log('Error', err);
-    else console.log('Files', otherfiles);
+fs.readdir('./', function(err, otherfiles) {
+  if (err) console.log('Error', err);
+  else console.log('Files', otherfiles);
 });

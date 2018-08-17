@@ -1,13 +1,15 @@
 # nodejs_tutorial_things
+
 here i'll store some code samples and things
 
-
 # nodejs documentation
+
 https://nodejs.org/dist/latest-v8.x/docs/api/
 
-
 # Personal Notes
+
 # Naming Convention
+
 Klassen werden immer gross geschrieben bzw. PascalCase or DromedaryCase !!
 Achtung nicht camelCase :)
 
@@ -22,8 +24,7 @@ const BauplanMensch = require('human');
 und dann machst du eine Objekt von der klasse
 const dominik = new BauplanMensch();
 
-
-
 # function vs method
+
 a function is a function
 a function inside a class is a method.

@@ -2,7 +2,6 @@
 // wenn du sachen importiertst
 // sucht node in drei stufen nach dem modul welches du willst
 
-
 // in diesem fall geht node davon aus das es ein Core modul gibt das http heisst
 const bla = require('http');
 

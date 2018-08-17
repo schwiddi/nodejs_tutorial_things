@@ -3,12 +3,12 @@
 console.log('foo');
 
 setTimeout(() => {
-    console.log('baaar');
+  console.log('baaar');
 }, 1000);
 clearTimeout();
 
 setInterval(() => {
-    console.log('shdhsidishidh');
+  console.log('shdhsidishidh');
 }, 10000);
 clearInterval();
 
@@ -22,16 +22,15 @@ var a = 'my text';
 console.log(a);
 // let
 
-// in js they are global and found in 
+// in js they are global and found in
 // window.myconst
 // hoever in node this is not the case.. a var is not globaly defined
 // var's are only usable in the module or file it is definded..
-// 
-
+//
 
 // wichitg, in Node.js gibts kein window
 // dafür gibt es das global object
 global.console.log('baaar');
 global.setTimeout(() => {
-    console.log('kasodokooo');
+  console.log('kasodokooo');
 }, 5000);

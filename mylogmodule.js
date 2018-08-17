@@ -5,9 +5,8 @@ console.log(__filename);
 console.log(__dirname);
 
 function myLogModule(logstring) {
-    console.log(logstring);
+  console.log(logstring);
 }
-
 
 // now use the modul object to export the function as an Object in the global object
 
